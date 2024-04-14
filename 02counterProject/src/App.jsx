@@ -9,12 +9,16 @@ function App() {
   // let counter = 5;
   const addValue = () => {
     setCounter(counter + 1);
-    console.log("Button Clicked", counter);
   };
   const removeValue = () => {
     setCounter(counter - 1);
     console.log("Button Clicked", counter);
   };
+  if (counter >= 20) {
+    counter = 0;
+  } else if (counter <= 0) {
+    counter = 0;
+  }
   return (
     <>
       <h1>React</h1>
